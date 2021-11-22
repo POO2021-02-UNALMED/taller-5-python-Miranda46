@@ -27,7 +27,7 @@ class Ave(Animal):
         cls.listado.append(Av)
 
     @classmethod
-    def crearSalamandra(cls, nombre, edad, genero):
+    def crearAguila(cls, nombre, edad, genero):
         Av=Ave(nombre, edad, "montanas", genero, "blanco y amarillo")
         cls.aguilas+=1
         cls.listado.append(Av)

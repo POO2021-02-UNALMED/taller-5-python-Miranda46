@@ -35,7 +35,8 @@ class Animal:
     def movimiento(self):
         return "desplazarse"
 
-    def totalPorTipo(self):
+    @classmethod
+    def totalPorTipo(cls):
         from zooAnimales.mamifero import Mamifero
         from zooAnimales.anfibio import Anfibio
         from zooAnimales.reptil import Reptil
@@ -43,6 +44,14 @@ class Animal:
         from zooAnimales.pez import Pez
         a="Mamiferos: " + Mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() + "\nReptiles: "+ Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() +"\nAnfibios: " + Anfibio.cantidadAnfibios()
         return a
+
+    def toString(self):
+	    if (self.zona !=None) :
+
+		        return "Mi nombre es "+self.nombre+ ", tengo una edad de " + self.edad+", habito en "+self.habitat+ " y mi genero es "+self.genero+"la zona en la que me ubico es "+self.zona+", en el "+self.zona.getZoo()
+	    else:
+                return "Mi nombre es "+self.nombre+ ", tengo una edad de " + self.edad+", habito en "+self.habitat+ " y mi genero es "+self.genero
+					
 
 if __name__=="__main__":
     an1 = Animal("Perro", 10, "casa", "m")
