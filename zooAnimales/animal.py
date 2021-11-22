@@ -50,7 +50,7 @@ class Animal:
 
 		        return "Mi nombre es "+str(self.nombre)+ ", tengo una edad de " + str(self.edad)+", habito en "+str(self.habitat)+ " y mi genero es "+str(self.genero)+"la zona en la que me ubico es "+str(self.zona)+", en el "+str(self.zona.getZoo())
 	    else:
-                return "Mi nombre es "+self.nombre+ ", tengo una edad de " + self.edad+", habito en "+self.habitat+ " y mi genero es "+self.genero
+                return "Mi nombre es "+str(self.nombre)+ ", tengo una edad de " + str(self.edad)+", habito en "+str(self.habitat)+ " y mi genero es "+str(self.genero)
 					
 
 if __name__=="__main__":
