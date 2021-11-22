@@ -34,7 +34,7 @@ class Reptil(Animal):
     def getListado(self):
         return self.listado
 
-    def getcolorEscamas(self):
+    def getColorEscamas(self):
         return self.colorEscamas
 
  

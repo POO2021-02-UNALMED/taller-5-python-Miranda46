@@ -36,6 +36,8 @@ class Anfibio(Animal):
     def isVenenoso(self):
         return self.venenoso
 
+    def getColorPiel(self):
+        return self.colorPiel
 
     def movimiento():
         return "saltar"
