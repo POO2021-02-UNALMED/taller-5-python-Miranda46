@@ -8,8 +8,8 @@ class Animal:
         self.habitat=habitat
         self.genero=genero
         zona=None
-  
         Animal.totalAnimales+=1
+
     @classmethod
     def getTotalAnimales(cls):
         return cls.totalAnimales
@@ -50,3 +50,5 @@ if __name__=="__main__":
     if an1.getNombre() == "Perro" and an1.getEdad() == 10 and an1.getHabitat() == "casa" and an1.getGenero() == "m":
         ok=True
     print(an1.getNombre() == "Perro" , an1.getEdad() == 10 , an1.getHabitat(), an1.getGenero() == "m")
+    a=Animal("s", 3, "d", "m")
+    print(Animal.totalAnimales)
