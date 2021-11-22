@@ -15,7 +15,7 @@ class Ave(Animal):
         self.habitat=habitat
         self.genero=genero
         self.colorPlumas=colorPlumas
-        zona=None
+        self.zona=None
     
         
         Ave.cantidadAves+=1
@@ -38,8 +38,6 @@ class Ave(Animal):
 
     def getColorPlumas(self):
         return self.colorPlumas
-
-
 
     def movimiento():
         return "volar"
