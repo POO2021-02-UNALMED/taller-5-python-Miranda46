@@ -1,7 +1,7 @@
+from zooAnimales.animal import Animal
 
 
-
-class Mamifero:
+class Mamifero(Animal):
     cantidadMamiferos=0
     caballos=0
     leones=0

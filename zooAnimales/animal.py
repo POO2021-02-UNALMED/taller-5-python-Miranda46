@@ -2,9 +2,9 @@
 class Animal:
     totalAnimales=0
     
-    def __init__(self, nombre, eadad, habitat, genero):
+    def __init__(self, nombre, edad, habitat, genero):
         self.nombre=nombre
-        self.edad=eadad
+        self.edad=edad
         self.habitat=habitat
         self.genero=genero
         zona=None
@@ -43,3 +43,10 @@ class Animal:
         from zooAnimales.pez import Pez
         a="Mamiferos: " + Mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() + "\nReptiles: "+ Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() +"\nAnfibios: " + Anfibio.cantidadAnfibios()
         return a
+
+if __name__=="__main___":
+    an1 = Animal("Perro", 10, "casa", "m")
+    ok = False
+    if an1.getNombre() == "Perro" and an1.getEdad() == 10 and an1.getHabitat() == "casa" and an1.getGenero() == "m":
+        ok=True
+    print(ok)

@@ -1,6 +1,9 @@
 
 
-class Ave:
+from zooAnimales.animal import Animal
+
+
+class Ave(Animal):
     cantidadAves=0
     halcones=0
     aguilas=0

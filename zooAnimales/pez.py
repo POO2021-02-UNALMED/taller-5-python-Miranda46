@@ -1,7 +1,7 @@
 
+from zooAnimales.animal import Animal
 
-
-class Pez:
+class Pez(Animal):
     cantidadPeces=0
     salmones=0
     bacalaos=0

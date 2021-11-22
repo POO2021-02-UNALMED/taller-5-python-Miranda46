@@ -1,7 +1,7 @@
 
+from zooAnimales.animal import Animal
 
-
-class Anfibio:
+class Anfibio(Animal):
     cantidadAnfibios=0
     ranas=0
     salamandras=0
