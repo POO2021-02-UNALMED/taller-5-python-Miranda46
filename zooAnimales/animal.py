@@ -42,22 +42,31 @@ class Animal:
         from zooAnimales.reptil import Reptil
         from zooAnimales.ave import Ave
         from zooAnimales.pez import Pez
-        a=str("Mamiferos: " + str(Mamifero.cantidadMamiferos) + "\nAves: " + str(Ave.cantidadAves) + "\nReptiles: "+ str(Reptil.cantidadReptiles) + "\nPeces: " + str(Pez.cantidadPeces) +"\nAnfibios: " + str(Anfibio.cantidadAnfibios))
+        a=str("Mamiferos : " + str(Mamifero.cantidadMamiferos) + "\nAves : " + str(Ave.cantidadAves) + "\nReptiles : "+ str(Reptil.cantidadReptiles) + "\nPeces : " + str(Pez.cantidadPeces) +"\nAnfibios : " + str(Anfibio.cantidadAnfibios))
         return a
 
     def toString(self):
 	    if (self.zona !=None) :
 
-		        return "Mi nombre es "+self.nombre+ ", tengo una edad de " + self.edad+", habito en "+self.habitat+ " y mi genero es "+self.genero+"la zona en la que me ubico es "+self.zona+", en el "+self.zona.getZoo()
+		        return "Mi nombre es "+str(self.nombre)+ ", tengo una edad de " + str(self.edad)+", habito en "+str(self.habitat)+ " y mi genero es "+str(self.genero)+"la zona en la que me ubico es "+str(self.zona)+", en el "+str(self.zona.getZoo())
 	    else:
                 return "Mi nombre es "+self.nombre+ ", tengo una edad de " + self.edad+", habito en "+self.habitat+ " y mi genero es "+self.genero
 					
 
 if __name__=="__main__":
-    an1 = Animal("Perro", 10, "casa", "m")
+    Anfibio.crearRana("test", 11, "M")
+    Anfibio.crearSalamandra("test", 11, "M")
+    Mamifero.crearCaballo("test", 11, "M")
+    Mamifero.crearCaballo("test", 11, "M")
+    Mamifero.crearLeon("test", 11, "M")
+    Reptil.crearIguana("test", 11, "M")
+    Pez.crearSalmon("test", 11, "M")
+    Ave.crearHalcon("test", 11, "M")
+    Ave.crearHalcon("test", 11, "M")
     ok = False
-    if an1.getNombre() == "Perro" and an1.getEdad() == 10 and an1.getHabitat() == "casa" and an1.getGenero() == "m":
-        ok=True
-    print(an1.getNombre() == "Perro" , an1.getEdad() == 10 , an1.getHabitat(), an1.getGenero() == "m")
-    a=Animal("s", 3, "d", "m")
-    print(Animal.totalPorTipo())
+    comp = "Mamiferos : 3\nAves : 2\nReptiles : 1\nPeces : 1\nAnfibios : 2"
+    print(comp.replace('\n', ''))
+    print(Animal.totalPorTipo().replace('\n', ''))
+    if Animal.totalPorTipo().replace('\n', '') == comp.replace('\n', ''):
+        ok = True
+  
