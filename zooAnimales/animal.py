@@ -42,7 +42,7 @@ class Animal:
         from zooAnimales.reptil import Reptil
         from zooAnimales.ave import Ave
         from zooAnimales.pez import Pez
-        a="Mamiferos: " + Mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() + "\nReptiles: "+ Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() +"\nAnfibios: " + Anfibio.cantidadAnfibios()
+        a=str("Mamiferos: " + str(Mamifero.cantidadMamiferos()) + "\nAves: " + str(Ave.cantidadAves()) + "\nReptiles: "+ str(Reptil.cantidadReptiles()) + "\nPeces: " + str(Pez.cantidadPeces()) +"\nAnfibios: " + str(Anfibio.cantidadAnfibios()))
         return a
 
     def toString(self):
@@ -60,4 +60,4 @@ if __name__=="__main__":
         ok=True
     print(an1.getNombre() == "Perro" , an1.getEdad() == 10 , an1.getHabitat(), an1.getGenero() == "m")
     a=Animal("s", 3, "d", "m")
-    print(Animal.totalAnimales)
+    print(Animal.totalPorTipo())

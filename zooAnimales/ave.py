@@ -15,6 +15,7 @@ class Ave(Animal):
         self.habitat=habitat
         self.genero=genero
         self.colorPlumas=colorPlumas
+        zona=None
     
         
         Ave.cantidadAves+=1
