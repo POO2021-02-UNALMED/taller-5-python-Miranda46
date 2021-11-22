@@ -36,9 +36,6 @@ class Anfibio(Animal):
     def isVenenoso(self):
         return self.venenoso
 
-    @staticmethod
-    def cantidadAnfibios(cls):
-        return cls.cantidadAnfibios
 
     def movimiento():
         return "saltar"

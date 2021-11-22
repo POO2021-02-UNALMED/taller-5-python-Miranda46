@@ -38,9 +38,7 @@ class Ave(Animal):
     def getColorPlumas(self):
         return self.colorPlumas
 
-    @staticmethod
-    def cantidadAves(cls):
-        return cls.cantidadAves
+
 
     def movimiento():
         return "volar"

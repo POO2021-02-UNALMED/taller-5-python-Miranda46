@@ -37,9 +37,7 @@ class Pez(Animal):
     def getcolorEscamas(self):
         return self.colorEscamas
 
-    @staticmethod
-    def cantidadPeces(cls):
-        return cls.cantidadPeces
+ 
 
     def getCantidadAletas(self):
         return self.cantidadAletas

@@ -37,9 +37,7 @@ class Mamifero(Animal):
     def getPatas(self):
         return self.patas
 
-    @staticmethod
-    def cantidadMamifero(cls):
-        return cls.cantidadMamiferos
+  
 
     def isPelaje(self):
         return self.pelaje
