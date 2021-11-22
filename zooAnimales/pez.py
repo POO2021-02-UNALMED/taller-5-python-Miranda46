@@ -1,4 +1,4 @@
-from zooAnimales.animal import Animal
+
 
 
 class Pez:
@@ -7,6 +7,7 @@ class Pez:
     bacalaos=0
     listado=[]
     def __init__(self, nombre, edad, habitat, genero, colorEscamas, cantidadAletas):
+        from zooAnimales.animal import Animal
         self.nombre=nombre
         self.edad=edad
         self.habitat=habitat

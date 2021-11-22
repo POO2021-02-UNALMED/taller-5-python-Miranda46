@@ -1,4 +1,4 @@
-from zooAnimales.animal import Animal
+
 
 
 class Mamifero:
@@ -7,6 +7,7 @@ class Mamifero:
     leones=0
     listado=[]
     def __init__(self, nombre, edad, habitat, genero, pelaje, patas):
+        from zooAnimales.animal import Animal
         self.nombre=nombre
         self.edad=edad
         self.habitat=habitat

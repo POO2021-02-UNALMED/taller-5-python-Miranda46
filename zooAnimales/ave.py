@@ -1,4 +1,3 @@
-from zooAnimales.animal import Animal
 
 
 class Ave:
@@ -7,6 +6,7 @@ class Ave:
     aguilas=0
     listado=[]
     def __init__(self, nombre, edad, habitat, genero, colorPlumas):
+        from zooAnimales.animal import Animal
         self.nombre=nombre
         self.edad=edad
         self.habitat=habitat

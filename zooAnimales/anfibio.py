@@ -1,4 +1,4 @@
-from zooAnimales.animal import Animal
+
 
 
 class Anfibio:
@@ -7,6 +7,7 @@ class Anfibio:
     salamandras=0
     listado=[]
     def __init__(self, nombre, edad, habitat, genero, colorPiel, venenoso):
+        from zooAnimales.animal import Animal
         self.nombre=nombre
         self.edad=edad
         self.habitat=habitat
